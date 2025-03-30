@@ -1,0 +1,59 @@
+{
+  "checksums": [
+    {
+      "id": "github_release/github.com/cli/cli/v2.69.0/gh_2.69.0_linux_amd64.tar.gz",
+      "checksum": "6E3079E1220920EB61B9E8B68093F6E84B6FB0676AC7DA3716689421134C7CFF",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.69.0/gh_2.69.0_linux_arm64.tar.gz",
+      "checksum": "B910B612AD001C2BCE19F1CFAB6C97AF5AFB9038ABB815BBC667920901281216",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/direnv/direnv/v2.35.0/direnv.linux-amd64",
+      "checksum": "55C294F4376397C68B1F659F049FB104DC2ECD0FCB15A15949D7F748E3F70B66",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/direnv/direnv/v2.35.0/direnv.linux-arm64",
+      "checksum": "B7B49853C7C822714A922A53D6DFFDED516F72B9A0324D029975A83662E065C2",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/goss-org/goss/v0.4.9/goss-linux-amd64",
+      "checksum": "87DD36CFA1B8B50554E6E2CA29168272E26755B19BA5438341F7C66B36DECC19",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/goss-org/goss/v0.4.9/goss-linux-arm64",
+      "checksum": "14FD24AC08236559F4809E6A627792D1B947ED98654BBA1662EF1D6122D77E18",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jqlang/jq/jq-1.7.1/jq-linux-amd64",
+      "checksum": "5942C9B0934E510EE61EB3E30273F1B3FE2590DF93933A93D7C58B81D19C8FF5",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jqlang/jq/jq-1.7.1/jq-linux-arm64",
+      "checksum": "4DD2D8A0661DF0B22F1BB9A1F9830F06B6F3B8F7D91211A1EF5D7C4F06A8B4A5",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/pnpm/pnpm/v10.7.0/pnpm-linux-arm64",
+      "checksum": "68916F9FADDE7CFEA9ECED8D88F3A2159D181B1FE5A1E405A71434FC05643405",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/pnpm/pnpm/v10.7.0/pnpm-linux-x64",
+      "checksum": "D1E8009B1AC8C54050EFD969D4B6A96EAE4FDC3E1ED138741EAF5699A85A16CF",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.333.1/registry.yaml",
+      "checksum": "9DBB73AF6D587E7696230A00BF9AD1A4D1B62512D5C179D55A5B471F332FF52E",
+      "algorithm": "sha256"
+    }
+  ]
+}

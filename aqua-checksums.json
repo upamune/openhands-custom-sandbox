@@ -1,0 +1,84 @@
+{
+  "checksums": [
+    {
+      "id": "github_content/github.com/goss-org/goss/v0.4.9/extras/dgoss/dgoss",
+      "checksum": "7EE35D6CCBE1440EB2A08984A43E8B3742F2E849ABDC0D7384AC08DE55682D7C",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/gogs/gogs/v0.13.2/gogs_0.13.2_darwin_amd64.zip",
+      "checksum": "DABE20FA2AE0402A9B97986D5922415FAB45019BEA11B9C589950209AD45C4D2",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/gogs/gogs/v0.13.2/gogs_0.13.2_darwin_arm64.zip",
+      "checksum": "F7FF9C432C732E8B6591BFAD3782FD9ABCACCEEB47DF366624EF621CB0EDED7D",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/gogs/gogs/v0.13.2/gogs_0.13.2_linux_amd64.tar.gz",
+      "checksum": "701084567C20E3E0A5DAB511FEFC933D4310D4AB96CDF4D80DD488A91F6DE170",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/goss-org/goss/v0.4.9/goss-darwin-amd64",
+      "checksum": "E0C1B22360CED9F5394E64244877DFE1D3488AEE9DE75C56B9E02AE72C3FE4FF",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/goss-org/goss/v0.4.9/goss-linux-amd64",
+      "checksum": "87DD36CFA1B8B50554E6E2CA29168272E26755B19BA5438341F7C66B36DECC19",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/goss-org/goss/v0.4.9/goss-linux-arm64",
+      "checksum": "14FD24AC08236559F4809E6A627792D1B947ED98654BBA1662EF1D6122D77E18",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/suzuki-shunsuke/pinact/v3.0.1/pinact_darwin_amd64.tar.gz",
+      "checksum": "B8D9743674B681E62D392F2E2220463D11D8CC4A2B944C6A42FFF956F4945FDB",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/suzuki-shunsuke/pinact/v3.0.1/pinact_darwin_arm64.tar.gz",
+      "checksum": "D1B94013789624873EA4D8F27DBDB74C8EC0F14F6DDBEBC99D0CA35F68727A1F",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/suzuki-shunsuke/pinact/v3.0.1/pinact_linux_amd64.tar.gz",
+      "checksum": "F4F35E2DC4CF1243CD0E8D3BC0B49C8B30C388D1DCAE5907AFCD97B00DDB556E",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/suzuki-shunsuke/pinact/v3.0.1/pinact_linux_arm64.tar.gz",
+      "checksum": "B319FC572C3FAE75A2744732D9C943D1B7402E1A43A3AABD8AB72F2FEB1454F7",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/download.docker.com/linux/static/stable/aarch64/docker-28.0.4.tgz",
+      "checksum": "D3291093E8ED576ED9E237B24DC4556A9ED21FF25D4C26578DF612CB6FE0480F",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/download.docker.com/linux/static/stable/x86_64/docker-28.0.4.tgz",
+      "checksum": "6B130FA5FB13516620D5ECE0B63F63A495CEDE428BB2F9E24449022E9D72E0CB",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/download.docker.com/mac/static/stable/aarch64/docker-28.0.4.tgz",
+      "checksum": "CE8CB345DBAB05859B675C1CDF34E5B98169796F1DA134DE0EA62FCD424A5101",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/download.docker.com/mac/static/stable/x86_64/docker-28.0.4.tgz",
+      "checksum": "EC575E4C5E58AEC5FADE31CF2C0CE618783DB87C28516D175114F0AC9CF459C1",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.333.1/registry.yaml",
+      "checksum": "9DBB73AF6D587E7696230A00BF9AD1A4D1B62512D5C179D55A5B471F332FF52E",
+      "algorithm": "sha256"
+    }
+  ]
+}

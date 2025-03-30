@@ -1,0 +1,80 @@
+name: Build, Test and Push Docker Image
+
+on:
+  push:
+    branches: [ main ]
+    tags: [ 'v*' ]
+  pull_request:
+    branches: [ main ]
+  # Schedule: every morning at 2:00 UTC (11:00 JST)
+  schedule:
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: upamune/openhands-custom-sandbox
+
+jobs:
+  build-test-push:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@b5ca514318bd6ebac0fb2aedd5d36ec1b5c232a2 # v3.10.0
+
+      - name: Log in to the Container registry
+        if: github.event_name != 'pull_request'
+        uses: docker/login-action@74a5d142397b4f367a81961eba4e8cd7edddf772 # v3.4.0
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Extract Docker metadata
+        id: meta
+        uses: docker/metadata-action@902fa8ec7d6ecbf8d84d538b9b233a880e428804 # v5.7.0
+        with:
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          tags: |
+            # main branch: latest + date tag
+            type=raw,value=latest,enable=${{ github.ref == format('refs/heads/main') }}
+            type=raw,value={{date 'YYYYMMDD'}},enable=${{ github.ref == format('refs/heads/main') }}
+            
+            # other branches: branch name based
+            type=ref,event=branch,prefix=branch-,enable=${{ github.ref != format('refs/heads/main') }}
+            
+            # PRs: prefixed PR number
+            type=ref,event=pr,prefix=pr-
+            
+            # tags: as-is + major.minor version
+            type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
+            
+            # commit hash (short form)
+            type=sha,format=short,prefix=sha-
+      
+      # Add build date to labels
+      - name: Get current date
+        id: date
+        run: echo "build_date=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_OUTPUT
+
+      - name: Build and push Docker image
+        if: success()
+        uses: docker/build-push-action@ca052bb54ab0790a636c9b5f226502c73d547a25 # v5.4.0
+        with:
+          context: .
+          push: ${{ github.event_name != 'pull_request' }}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: |
+            ${{ steps.meta.outputs.labels }}
+            org.opencontainers.image.created=${{ steps.date.outputs.build_date }}
+            org.opencontainers.image.description=OpenHands Custom Sandbox Docker Image
+          cache-from: type=gha
+          cache-to: type=gha,mode=max

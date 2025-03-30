@@ -1,0 +1,31 @@
+# Version control
+.git
+.gitignore
+
+# GitHub Actions workflows
+.github/
+
+# Documentation
+*.md
+LICENSE
+
+# Editor configs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Docker and other build files
+.dockerignore
+docker-compose*
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*~
+
+# Only include specific directories needed for the build
+# !config/
+# !scripts/
