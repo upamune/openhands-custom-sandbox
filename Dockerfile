@@ -1,4 +1,4 @@
-FROM debian:bookworm
+FROM ghcr.io/all-hands-ai/runtime:0.30-nikolaik
 
 # Install essential packages
 RUN apt-get update && apt-get install -y \
