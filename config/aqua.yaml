@@ -15,3 +15,7 @@ packages:
   - name: jqlang/jq@jq-1.7.1
   - name: direnv/direnv@v2.35.0
   - name: pnpm/pnpm@v10.7.0
+  - name: suzuki-shunsuke/pinact@v3.0.3
+  - name: BurntSushi/ripgrep@14.1.1
+  - name: junegunn/fzf@v0.61.1
+  - name: ducaale/xh@v0.24.0

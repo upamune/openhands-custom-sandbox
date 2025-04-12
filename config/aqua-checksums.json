@@ -1,6 +1,16 @@
 {
   "checksums": [
     {
+      "id": "github_release/github.com/BurntSushi/ripgrep/14.1.1/ripgrep-14.1.1-aarch64-unknown-linux-gnu.tar.gz",
+      "checksum": "C827481C4FF4EA10C9DC7A4022C8DE5DB34A5737CB74484D62EB94A95841AB2F",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/BurntSushi/ripgrep/14.1.1/ripgrep-14.1.1-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "4CF9F2741E6C465FFDB7C26F38056A59E2A2544B51F7CC128EF28337EEAE4D8E",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/cli/cli/v2.69.0/gh_2.69.0_linux_amd64.tar.gz",
       "checksum": "6E3079E1220920EB61B9E8B68093F6E84B6FB0676AC7DA3716689421134C7CFF",
       "algorithm": "sha256"
@@ -18,6 +28,16 @@
     {
       "id": "github_release/github.com/direnv/direnv/v2.35.0/direnv.linux-arm64",
       "checksum": "B7B49853C7C822714A922A53D6DFFDED516F72B9A0324D029975A83662E065C2",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/ducaale/xh/v0.24.0/xh-v0.24.0-aarch64-unknown-linux-musl.tar.gz",
+      "checksum": "E32E714A5BABF1196D20C46B198AF3083576CD0FFC94E593FC263239F14BFE8D",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/ducaale/xh/v0.24.0/xh-v0.24.0-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "C65FFD3ACA38CB7D9A618342718650957D2F371F21435F62EB1A19229B033825",
       "algorithm": "sha256"
     },
     {
@@ -41,6 +61,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/junegunn/fzf/v0.61.1/fzf-0.61.1-linux_amd64.tar.gz",
+      "checksum": "F728B94BBBF7008602581FC07EA00DE5DCCF55A2CB2BF9FD9A35F1071B3B9F6C",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/junegunn/fzf/v0.61.1/fzf-0.61.1-linux_arm64.tar.gz",
+      "checksum": "25F6295F718B572AC2FF7DE1FFA9E39E619F4F9587386D85BF5B647F0B98FD6B",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/pnpm/pnpm/v10.7.0/pnpm-linux-arm64",
       "checksum": "68916F9FADDE7CFEA9ECED8D88F3A2159D181B1FE5A1E405A71434FC05643405",
       "algorithm": "sha256"
@@ -48,6 +78,16 @@
     {
       "id": "github_release/github.com/pnpm/pnpm/v10.7.0/pnpm-linux-x64",
       "checksum": "D1E8009B1AC8C54050EFD969D4B6A96EAE4FDC3E1ED138741EAF5699A85A16CF",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/suzuki-shunsuke/pinact/v3.0.3/pinact_linux_amd64.tar.gz",
+      "checksum": "C1A75573357117E8A9564682B814E45E8AE7FA6C17C842A8D400F844CC5BA46F",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/suzuki-shunsuke/pinact/v3.0.3/pinact_linux_arm64.tar.gz",
+      "checksum": "58A27AF9949E99DDDB0B8300D6D0AC1E080D5EF8511668ABDC8991C641DC5DC9",
       "algorithm": "sha256"
     },
     {
