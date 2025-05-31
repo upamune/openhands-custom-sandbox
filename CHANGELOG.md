@@ -1,5 +1,7 @@
 # Changelog
 
+## [v0.0.4](https://github.com/upamune/openhands-custom-sandbox/compare/v0.0.3...v0.0.4) - 2025-05-31
+
 ## [v0.0.3](https://github.com/upamune/openhands-custom-sandbox/compare/v0.0.2...v0.0.3) - 2025-04-12
 - Update Dockerfile to use runtime version 0.32-nikolaik by @upamune in https://github.com/upamune/openhands-custom-sandbox/pull/4
 
