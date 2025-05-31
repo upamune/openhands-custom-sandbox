@@ -45,5 +45,5 @@ jobs:
           docker run --rm openhands-custom-sandbox:test jq --version
           docker run --rm openhands-custom-sandbox:test rg --version
           
-          # Test npm global package installation
-          docker run --rm openhands-custom-sandbox:test bash -c "pnpm install -g typescript && tsc --version"
+          # Test pnpm functionality with local package
+          docker run --rm openhands-custom-sandbox:test bash -c "mkdir -p /tmp/test && cd /tmp/test && pnpm init -y && pnpm add typescript && npx tsc --version"

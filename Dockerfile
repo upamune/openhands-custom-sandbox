@@ -37,13 +37,14 @@ ENV PATH="${AQUA_ROOT_DIR}/bin:${PATH}"
 # Node.js environment variables
 ENV XDG_DATA_HOME=/opt/xdg-data
 ENV NPM_CONFIG_PREFIX="${XDG_DATA_HOME}/npm-global"
-ENV PATH="${NPM_CONFIG_PREFIX}/bin:${PATH}"
+ENV PNPM_HOME="${XDG_DATA_HOME}/pnpm"
+ENV PATH="${PNPM_HOME}:${NPM_CONFIG_PREFIX}/bin:${PATH}"
 
 # Set working directory
 WORKDIR /work
 
 # Create necessary directories
-RUN mkdir -p ${NPM_CONFIG_PREFIX}/bin
+RUN mkdir -p ${NPM_CONFIG_PREFIX}/bin ${PNPM_HOME}
 
 # Bash configuration
 COPY config/bashrc /root/.bashrc
