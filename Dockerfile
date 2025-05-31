@@ -61,7 +61,4 @@ COPY config/aqua-checksums.json ${AQUA_GLOBAL_CONFIG_DIR}/aqua-checksums.json
 # Install tools with aqua
 RUN aqua i -a
 
-# Setup pnpm global bin directory
-RUN pnpm setup
-
 CMD ["/bin/bash"]
