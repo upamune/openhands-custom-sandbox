@@ -1,0 +1,49 @@
+name: Build and Test
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'Dockerfile'
+      - 'config/**'
+      - 'scripts/**'
+      - '.github/workflows/build-test.yml'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'Dockerfile'
+      - 'config/**'
+      - 'scripts/**'
+      - '.github/workflows/build-test.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      
+      - name: Build Docker image
+        run: |
+          docker build -t openhands-custom-sandbox:test .
+      
+      - name: Test Docker image
+        run: |
+          # Test if the container starts successfully
+          docker run --rm openhands-custom-sandbox:test bash -c "echo 'Container started successfully'"
+          
+          # Test if aqua is installed and working
+          docker run --rm openhands-custom-sandbox:test aqua --version
+          
+          # Test if pre-installed tools are available
+          docker run --rm openhands-custom-sandbox:test gh --version
+          docker run --rm openhands-custom-sandbox:test pnpm --version
+          docker run --rm openhands-custom-sandbox:test jq --version
+          docker run --rm openhands-custom-sandbox:test rg --version
+          
+          # Test npm global package installation
+          docker run --rm openhands-custom-sandbox:test bash -c "pnpm install -g typescript && tsc --version"
